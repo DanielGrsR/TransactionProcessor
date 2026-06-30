@@ -20,6 +20,7 @@ public class AccountsController : ControllerBase
         return Ok(_accountRepository.GetAll());
     }
 
+
     [HttpGet("{accountId}")]
     public IActionResult GetAccount(string accountId)
     {
